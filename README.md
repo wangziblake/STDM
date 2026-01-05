@@ -26,7 +26,7 @@ Given the amazing adaptability and generalization capability, we believe that ou
 ## Citation
 If you want to use the code, please cite the following paper:
 
-Zi Wang et al., Robust cardiac cine MRI reconstruction with spatiotemporal diffusion model, IEEE Transactions on Computational Imaging, 11: 1258-1270, 2025.
+Zi Wang et al., Robust cardiac cine MRI reconstruction with spatiotemporal diffusion model, ***IEEE Transactions on Computational Imaging***, 11: 1258-1270, 2025.
 
 
 ## Acknowledgement
