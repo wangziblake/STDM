@@ -20,7 +20,16 @@ Given the **amazing adaptability and generalization capability**, we believe tha
 
 
 ## dSTDM framework: Dual-directional spatiotemporal diffusion model
-The training and testing codes of dSTDM framework are released here (under construction).
+The training and testing codes of dSTDM framework are released here.
+
+Run the main code for training, use:
+```
+/dSTDM_maincode/STDM/STDM_Train_withCSM_Minibatch_InOrder_torch_CineSAX.py
+```
+Run the main code for reconstruction, use:
+```
+/dSTDM_maincode/STDM/STDM_DualRD_Recon_torch.py
+```
 
 Python environment should be: python=3.6.13, pytorch=1.10.1
 
