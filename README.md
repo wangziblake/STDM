@@ -1,44 +1,36 @@
-# One AI Model for Multi-scenario Reconstructions: Physics-informed Synthetic Data Boosts Generalizable Deep Learning for Fast MRI
-This work presents a Physics-Informed Synthetic data learning Framework for fast MRI, called PISF, which is the first to enable generalizable DL for multi-scenario MRI reconstruction using solely one trained model.
+# Dimensional Reduction Strike: Robust Dynamic MRI Reconstruction with Spatiotemporal Diffusion Model
+Accelerated dynamic magnetic resonance imaging (MRI) is highly expected in clinical applications. However, its reconstruction remains challenging due to the inherently high dimensionality and complexity of spatiotemporal information. Recent diffusion model has emerged as a robust reconstruction approach for spatial imaging, but their applications to spatiotemporal data remain underexplored. Therefore, it is essential to develop a new diffusion model tailored for dynamic MRI reconstruction, to better visualize the changes in organ physiological functions. 
 
-1) We demonstrate that training DL models on synthetic data, integrated with enhanced learning techniques, can achieve comparable or even better *in vivo* MRI reconstruction compared to models trained on a matched realistic dataset—PISF reduces the demand for real-world MRI data by up to 96%. 
-2) Our PISF shows impressive generalizability in multi-vendor multi-center imaging—it can reconstruct high-quality images of 4 anatomies and 5 contrasts across 5 vendors and centers using a single trained network.
-3) PISF’s superior adaptability to patients has been verified through 10 experienced doctors’ evaluations (4 neuro radiologists and 1 neurosurgeon for brain tumor patients, and 3 cardiac radiologists and 2 cardiologists for myocardial hypertrophy patients)—its overall image quality steps into the excellent level in reader study.
+Here, we propose **a novel spatiotemporal diffusion model specifically designed for accelerated dynamic MRI**. Our main contributions are summarized as follows: 
 
-In summary, PISF provides a feasible and cost-effective way to markedly boost the widespread usage of DL in various fast MRI applications, while freeing from the intractable ethical and practical considerations of *in vivo* human data acquisitions. 
-![OverallConcept_PISF](https://github.com/wangziblake/PISF/blob/main/Figure/OverallConcept_PISF.png)
+1) A **flexible and robust** spatiotemporal diffusion model is proposed for dynamic MRI reconstruction. The learned spatiotemporal prior is agnostic to undersampling scenarios, allowing our method to **flexibly adapt to changes in reconstructions without re-training**.
+2) By **analyzing the latent feature distributions** of different datasets, we find that the spatiotemporal diffusion shows greater potential than the existing spatial diffusion for **achieving robust reconstruction across diverse data**.
+3) A **simple and effective** diffusion enhancement framework is proposed. It employs dual-directional orthogonal 2D models as a 3D spatiotemporal prior to **avoid visual misalignment and improve reconstruction performance**.
+4) For both healthy cases and patients, the proposed method consistently provides state-of-the-art performance in **highly accelerated reconstruction** and shows remarkable robustness across **various undersampling scenarios and unseen data**, including patient data, real-time MRI data, non-Cartesian radial sampling, and different anatomies.
 
-The preprint paper can be seen at https://doi.org/10.48550/arXiv.2307.13220.
+Given the amazing adaptability and generalization capability, we believe that our spatiotemporal diffusion model offers a promising direction for achieving more reliable dynamic MRI in diverse scenarios. Furthermore, this innovative approach holds great potential to be extended to the inverse problems in other medical modalities involving dynamic acquisitions.
 
-This paper has been accepted by Medical Image Analysis (2025) at https://doi.org/10.1016/j.media.2025.103616.
+![Method_dSTDM](https://github.com/wangziblake/STDM/blob/main/Figure/Method_dSTDM.png)
 
-Email: Xiaobo Qu (quxiaobo@xmu.edu.cn) CC: Zi Wang (zi.wang123@imperial.ac.uk)
+![Analysis_dSTDM](https://github.com/wangziblake/STDM/blob/main/Figure/Analysis_dSTDM.png)
 
-Homepage: http://csrc.xmu.edu.cn
+**This paper has been accepted by IEEE Transactions on Computational Imaging (2025) at https://doi.org/10.1109/TCI.2025.3598421**
 
+**Email: Dr. Zi Wang (zi.wang@imperial.ac.uk); Dr. Xiaobo Qu (quxiaobo@xmu.edu.cn)**
 
-## Testing codes of PISF
-The testing codes of PISF are released here.
+**Python environment should be: python=3.6.13, pytorch=1.10.1**
 
-Install conda environment:
-```bash
-conda env create -f environment
-```
-Run the main code for reconstruction:
-```python
-python PISF_Recon_Enhance.py
-```
-
-Python environment should be: python=3.6.13, pytorch=1.10.1
-
-Implementation tips: If you want to test on your own collected data, they should be stored in the same format as the demo data we provided and be 8-coil or compressed/extended to 8-coil. (Note: The code of a much more coil-number-flexible version PISFC proposed in the published paper is currently under collation.)
-
-Data availability: All used public datasets are available at their websites, including https://fastmri.org, http://www.mridata.org, and https://ocmr.info. Other in-house MRI datasets from our own collection are available from the corresponding author upon reasonable request.
-
-Note: The software is used for testing only, and cannot be used commercially.
+**Note: The software is used for academic only, and cannot be used commercially.**
 
 
 ## Citation
 If you want to use the code, please cite the following paper:
 
-Zi Wang et al., One for Multiple: Physics-informed Synthetic Data Boosts Generalizable Deep Learning for Fast MRI Reconstruction, Medical Image Analysis, 103: 103616, 2025.
+Zi Wang et al., Robust cardiac cine MRI reconstruction with spatiotemporal diffusion model, IEEE Transactions on Computational Imaging, 11: 1258-1270, 2025.
+
+
+## Acknowledgement
+The authors thank Drs. Michael Lustig, Ricardo Otazo, Jo Schlemper, Dong Liang, Hyungjin Chung, Jong Chul Ye, and Yang Song for sharing their codes online. 
+
+
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=<wangziblake>.<STDM>)
