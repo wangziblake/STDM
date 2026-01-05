@@ -1,6 +1,8 @@
 # Dimensional Reduction Strike: Robust Dynamic MRI Reconstruction with Spatiotemporal Diffusion Model
 Accelerated dynamic magnetic resonance imaging (MRI) is highly expected in clinical applications. However, its reconstruction remains challenging due to the inherently high dimensionality and complexity of spatiotemporal information. Recent diffusion model has emerged as a robust reconstruction approach for spatial imaging, but their applications to spatiotemporal data remain underexplored. Therefore, it is essential to develop a new diffusion model tailored for dynamic MRI reconstruction, to better visualize the changes in organ physiological functions. 
 
+![Method_dSTDM](https://github.com/wangziblake/STDM/blob/main/Figure/Method_dSTDM.png)
+
 Here, we propose **a novel spatiotemporal diffusion model specifically designed for accelerated dynamic MRI**. Our main contributions are summarized as follows: 
 
 1) A **flexible and robust** spatiotemporal diffusion model is proposed for dynamic MRI reconstruction. The learned spatiotemporal prior is agnostic to undersampling scenarios, allowing our method to **flexibly adapt to changes in reconstructions without re-training**.
@@ -9,8 +11,6 @@ Here, we propose **a novel spatiotemporal diffusion model specifically designed 
 4) For both healthy cases and patients, the proposed method consistently provides state-of-the-art performance in **highly accelerated reconstruction** and shows remarkable robustness across **various undersampling scenarios and unseen data**, including patient data, real-time MRI data, non-Cartesian radial sampling, and different anatomies.
 
 Given the **amazing adaptability and generalization capability**, we believe that our spatiotemporal diffusion model offers a promising direction for achieving more reliable dynamic MRI in diverse scenarios. Furthermore, this innovative approach holds great potential to be extended to the inverse problems in other medical modalities involving dynamic acquisitions.
-
-![Method_dSTDM](https://github.com/wangziblake/STDM/blob/main/Figure/Method_dSTDM.png)
 
 ![Analysis_dSTDM](https://github.com/wangziblake/STDM/blob/main/Figure/Analysis_dSTDM.png)
 
