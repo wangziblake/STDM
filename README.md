@@ -19,7 +19,7 @@ Given the **amazing adaptability and generalization capability**, we believe tha
 **Email: Dr. Zi Wang (zi.wang@imperial.ac.uk); Dr. Xiaobo Qu (quxiaobo@xmu.edu.cn)**
 
 
-## Dual-directional spatiotemporal diffusion model: dSTDM framework
+## dSTDM framework: Dual-directional spatiotemporal diffusion model
 The training and testing codes of dSTDM framework are released here (under construction).
 
 Python environment should be: python=3.6.13, pytorch=1.10.1
