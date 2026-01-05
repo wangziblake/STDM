@@ -1,5 +1,5 @@
 # Dimensional Reduction Strike: Robust Dynamic MRI Reconstruction with Spatiotemporal Diffusion Model
-Accelerated dynamic magnetic resonance imaging (MRI) is highly expected in clinical applications. However, its reconstruction remains challenging due to the inherently high dimensionality and complexity of spatiotemporal information. Recent diffusion model has emerged as a robust reconstruction approach for spatial imaging, but their applications to spatiotemporal data remain underexplored. Therefore, it is essential to develop a new diffusion model tailored for dynamic MRI reconstruction, to better visualize the changes in organ physiological functions. 
+Accelerated dynamic magnetic resonance imaging (MRI) is highly expected in clinical applications. **However, its reconstruction remains challenging due to the inherently high dimensionality and complexity of spatiotemporal information.** Recent diffusion model has emerged as a robust reconstruction approach for spatial imaging, but their applications to spatiotemporal data remain underexplored. Therefore, it is essential to develop a new diffusion model tailored for dynamic MRI reconstruction, to better visualize the changes in organ physiological functions. 
 
 ![Method_dSTDM](https://github.com/wangziblake/STDM/blob/main/Figure/Method_dSTDM.png)
 
