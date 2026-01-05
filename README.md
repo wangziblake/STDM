@@ -8,7 +8,7 @@ Here, we propose **a novel spatiotemporal diffusion model specifically designed 
 3) A **simple and effective** diffusion enhancement framework is proposed. It employs dual-directional orthogonal 2D models as a 3D spatiotemporal prior to **avoid visual misalignment and improve reconstruction performance**.
 4) For both healthy cases and patients, the proposed method consistently provides state-of-the-art performance in **highly accelerated reconstruction** and shows remarkable robustness across **various undersampling scenarios and unseen data**, including patient data, real-time MRI data, non-Cartesian radial sampling, and different anatomies.
 
-Given the amazing adaptability and generalization capability, we believe that our spatiotemporal diffusion model offers a promising direction for achieving more reliable dynamic MRI in diverse scenarios. Furthermore, this innovative approach holds great potential to be extended to the inverse problems in other medical modalities involving dynamic acquisitions.
+Given the **amazing adaptability and generalization capability**, we believe that our spatiotemporal diffusion model offers a promising direction for achieving more reliable dynamic MRI in diverse scenarios. Furthermore, this innovative approach holds great potential to be extended to the inverse problems in other medical modalities involving dynamic acquisitions.
 
 ![Method_dSTDM](https://github.com/wangziblake/STDM/blob/main/Figure/Method_dSTDM.png)
 
