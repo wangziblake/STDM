@@ -18,7 +18,9 @@ Given the **amazing adaptability and generalization capability**, we believe tha
 
 **Email: Dr. Zi Wang (zi.wang@imperial.ac.uk); Dr. Xiaobo Qu (quxiaobo@xmu.edu.cn)**
 
-**Python environment should be: python=3.6.13, pytorch=1.10.1**
+
+## dSTDM (Dual-directional spatiotemporal diffusion model) framework (under construction)
+Python environment should be: python=3.6.13, pytorch=1.10.1
 
 **Note: The software is used for academic only, and cannot be used commercially.**
 
