@@ -20,6 +20,8 @@ Given the **amazing adaptability and generalization capability**, we believe tha
 
 
 ## dSTDM (Dual-directional spatiotemporal diffusion model) framework (under construction)
+The training and testing codes of dSTDM framework are released here.
+
 Python environment should be: python=3.6.13, pytorch=1.10.1
 
 **Note: The software is used for academic only, and cannot be used commercially.**
